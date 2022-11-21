@@ -68,9 +68,9 @@ Neste exercício, verificamos se você é capaz de:
 
 1. Clone o repositório
 
-- Use o comando: `git clone git@github.com:tryber/sd-0x-exercise-pokedex`.
+- Use o comando: `git clone git@github.com:tryber/sd-027-a-exercise-pokedex.git`
 - Entre na pasta do repositório que você acabou de clonar:
-  - `cd sd-0x-exercise-pokedex`
+  - `cd sd-027-a-exercise-pokedex`
 
 2. Instale as dependências
 
