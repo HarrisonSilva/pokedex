@@ -256,9 +256,10 @@ Você sabia que o LinkedIn é a principal rede social profissional e compartilha
 ## 1. Crie o componente `<Pokedex />`
 
 <details>
-  <summary>Este componente deverá renderizar um título e uma <code>ul</code></summary><br />
+  <summary>Este componente deverá renderizar um título e uma <code>ul</code></summary>
 
-  - Este componente deverá: 
+  - Este componente deverá:
+
     - ser criado dentro da pasta `src/components`.
 
     - conter uma tag `h1` com o texto `Pokédex`.
@@ -271,16 +272,17 @@ Você sabia que o LinkedIn é a principal rede social profissional e compartilha
 </details>
 
 <details>
-  <summary>💡dicas</summary><br />
+  <summary>💡dicas</summary>
 
   - Não esqueça de fazer as devidas validações com o `PropTypes`!
 
 </details>
 
 <details>
-  <summary><strong>O que será verificado</strong></summary><br />
+  <summary><strong>O que será verificado</strong></summary>
 
-  - Será validado se: 
+  - Será validado se:
+
     - uma tag `h1` com o texto `Pokédex` é renderizado dentro do componente `<Pokedex />`.
   
     - uma tag `ul` é renderizada dentro do componente `<Pokedex />`.
@@ -292,26 +294,45 @@ Você sabia que o LinkedIn é a principal rede social profissional e compartilha
 ## 2. Crie o componente `<Pokemon />`
 
 <details>
-  <summary>Este componente deverá renderizar as informações de um pokémon</summary><br />
+  <summary>Este componente deverá renderizar as informações de um pokémon</summary>
   
   - Ele deve ser criado dentro da pasta `src/components`.
   
   - Este componente deverá : 
     - receber uma `prop` chamada `pokemon`, que será um objeto com as informações de um Pokémon.
 
-    - conter uma tag `li` que envolva todo seu conteúdo.
+    - conter uma tag `li` que envolva todo o seu conteúdo.
   
-  - Este componente deverá renderizar as seguintes informações (que estão dentro do objeto recebido via `props` chamada `pokemon`): 
+  - Este componente deverá renderizar as seguintes informações (que estão dentro do objeto recebido via `props` chamada `pokemon`):
+
     - o nome do Pokémon;
     - o tipo do Pokémon;
-    - o peso médio do Pokémon, acompanhado da unidade de medida usada. Por exemplo: "20 kg";
+    - o peso médio do Pokémon, acompanhado da unidade de medida usada. Por exemplo: `"20 kg"`;
     - a imagem do Pokémon.
-  
-  - Conter na imagem o atributo `alt` com o valor do nome do Pokémon.
+    - Conter na imagem o atributo `alt` com o valor do nome do Pokémon.
+    
+  <details>
+    <summary><strong>Estrutura do objeto Pokémon</strong></summary>
+
+  ```js
+  {
+    id: 25,
+    name: 'Pikachu',
+    type: 'Electric',
+    averageWeight: {
+      value: 6.0,
+      measurementUnit: 'kg',
+    },
+    image: 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png',
+    moreInfo: 'https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)',
+  }
+  ```
+
+  </details>
 </details>
 
 <details>
-  <summary>💡dicas</summary><br />
+  <summary>💡dicas</summary>
 
   - Abra o arquivo `src/data.js` e veja o nome das propriedades de cada pokémon, escolhendo assim os atributos que mais se adequam ao projeto. Verificar como receberemos um objeto, bem como o nome de suas chaves, e quais devemos utilizar para resolver nosso requisito, faz parte do dia-a-dia de pessoas programadoras. 😄
 
@@ -320,7 +341,7 @@ Você sabia que o LinkedIn é a principal rede social profissional e compartilha
 </details>
 
 <details>
-  <summary><strong>O que será verificado</strong></summary><br />
+  <summary><strong>O que será verificado</strong></summary>
 
   - Será verificado se o: 
   
@@ -342,17 +363,17 @@ Você sabia que o LinkedIn é a principal rede social profissional e compartilha
 <details>
   <summary>Renderize uma lista com as informações dos Pokémon dentro do componente <code>&lt;Pokedex /&gt;</code></summary>
 
-  - O componente `<Pokedex/>` deve receber a lista de Pokémon por meio da `props` chamada `pokemonList`.
-
   - Você encontrará a lista com as informações dos Pokémon no arquivo `src/data.js`.
+  
+  - Faça a importação do `src/data.js` no componente `App.js`.
+
+  - O componente `<Pokedex/>` deve receber a lista de Pokémon por meio da `props` chamada `pokemonList`.
 
   - Cada Pokémon da lista deverá ser renderizado por um componente `Pokemon`. Passe as informações do Pokémon por meio da `props` que já existe nesse componente.
 </details>
 
 <details>
-  <summary>💡dicas</summary><br />
-
-  - Dependendo da sua implementação, o teste do requisito 1 pode começar a falhar quando você adicionar a lógica de renderizar a lista (recebida por `props` no componente `<Pokedex />`).
+  <summary>💡dicas</summary>
 
   - Para garantir a renderização, independentemente se foi passado ou não uma `prop` para o componente, que tal conferir a documentação sobre as _[defaultProps](https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values)_?
 
@@ -363,7 +384,7 @@ Você sabia que o LinkedIn é a principal rede social profissional e compartilha
 </details>
 
 <details>
-  <summary><strong>O que será verificado</strong></summary><br />
+  <summary><strong>O que será verificado</strong></summary>
 
   - Se o componente `<Pokedex />` renderiza a quantidade correta de elementos.
 
