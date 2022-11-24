@@ -1,9 +1,10 @@
 import React from 'react';
+import Pokedex from './components/Pokedex';
 import './App.css';
 
 function App() {
   return (
-    <h1>Exercise - Pokedex</h1>
+    <Pokedex />
   );
 }
 
